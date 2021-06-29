@@ -240,7 +240,7 @@ class ETL:
 
         # initializing db connection url string
         db_url = f'mysql+mysqlconnector://{os.environ["USER"]}:{os.environ["PASS"]}@'\
-                 f'{os.environ["HOST"]}:{os.environ["PORT"]}/{os.environ["NAME1"]}'
+                 f'{os.environ["HOST"]}:{os.environ["PORT"]}/{os.environ["NAME"]}'
 
         # making db connection
         database_connection = sqlalchemy.create_engine(db_url)
@@ -250,4 +250,4 @@ class ETL:
         
         Logger("Data loaded successfully")
         Logger("{} file data is loaded into {} table in {} database".format(self.file_name, self.table_name,
-                                                                            os.environ["NAME1"]))
+                                                                            os.environ["NAME"]))
