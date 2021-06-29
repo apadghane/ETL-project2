@@ -1,0 +1,5 @@
+USER=demo_user
+PASS=demo_password
+HOST=demo_host
+PORT=demo_port
+NAME=demo_name

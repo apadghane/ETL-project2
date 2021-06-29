@@ -1,0 +1,10 @@
+{
+  "data_directory": "Analytics",
+  "data_file": "ETL-task-2-data_2021.xlsx",
+  "data_sheet": "Month-Wise-Data-Sheet",
+  "transform_columns": [
+    "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+  ],
+  "transform_column": "Month",
+  "transform_value": "Budget"
+}
