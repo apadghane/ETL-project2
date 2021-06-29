@@ -27,7 +27,7 @@
 4. Activate virtualenv by `venv\Scripts\activate` or `source venv/bin/activate` in shell/bash/terminal<br><br>
 4. Install requirements by `pip3 install -r requirements.txt` or `pip install -r requirements.txt`<br><br>
 5. Insert your db credentials in `.envDemo` file and rename/clone it to `.env`<br><br>
-5. To run jupyter notebook type `python ETL-Task-2-driver.py` in virtualenv activated shell/bash/terminal
+5. To perform ETL on data we need to run python file, type `python ETL-Task-2-driver.py` in virtualenv activated shell/bash/terminal
 
 **Screen Shots**:
 * Dataset created by myself, is provided in Analytics folder
