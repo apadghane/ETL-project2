@@ -78,7 +78,7 @@ class LoadConfig:
     def get_transform_columns(self) -> list:
         """
             get_transform_columns -> Instance Method
-            return: list
+            return: list[str]
             
             Returns list of columns that need to be pivot/reduce
         """
@@ -206,7 +206,7 @@ class ETL:
             
             Performs transform phase of ETL on data that is extracted in pandas.DataFrame
             My transformation task is to melt or transform wide data into long data
-            Given 'Budget' month wise, transform in such a way that only one column on month should be in output
+            Given 'Budget' month wise, transform in such a way that column on month with all other columns should be in output
         """
 
         # segregating remaining columns to append in output data
@@ -221,7 +221,7 @@ class ETL:
             lambda month: self.file_name.split(".")[0][-4:] + "-" +
                           datetime.datetime.strptime(month, "%b").strftime("%m"))
 
-        # adding a new column which contains current datatime
+        # adding a new column which contains current datetime
         self.data_frame[self.__new_column__] = datetime.datetime.now()
 
         Logger(f"{self.file_name} file data is successfully transformed")
